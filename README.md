@@ -1,0 +1,4 @@
+scrolling-text
+==============
+
+jQuery Plugin
