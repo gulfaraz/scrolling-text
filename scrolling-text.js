@@ -119,13 +119,8 @@
 
                         $(this).scroll(function() {
                             var current_scroll = $(this).scrollTop();
-                            if (current_scroll < configuration.fadeTop) {
-                                $(this).find('div.scrollingtext-before').height(current_scroll);
-                            } else if (current_scroll > (maximum_scroll - configuration.fadeBottom)) {
-                                $(this).find('div.scrollingtext-after').height(maximum_scroll - current_scroll);
-                            } else {
-                                $(this).find('div.scrollingtext-before, div.scrollingtext-after').fadeIn(300);
-                            }
+                            $(this).find('div.scrollingtext-before').height(Math.min(current_scroll, configuration.fadeTop));
+                            $(this).find('div.scrollingtext-after').height(Math.min((maximum_scroll - current_scroll), configuration.fadeBottom));
                         });
                     });
                 }
