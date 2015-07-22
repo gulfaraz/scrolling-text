@@ -1,6 +1,8 @@
 scrolling-text
 ==============
 
+[![Join the chat at https://gitter.im/gulfaraz/scrolling-text](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/gulfaraz/scrolling-text?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 jQuery Plugin
 
 A simple jQuery plugin which makes your text scroll-able so you can save valuable space on your web page.
